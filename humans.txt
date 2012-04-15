@@ -6,6 +6,7 @@
   Location: Ottawa, Canada
 
 /* THANKS */
+  "Toolbox" icon by Daniel Hickey, from The Noun Project; <http://thenounproject.com/noun/toolbox/#icon-No1949>
 
 /* SITE */
   Software:

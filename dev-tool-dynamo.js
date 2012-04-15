@@ -1,4 +1,4 @@
-var DevToolsDynamo = (function () {
+var DevToolDynamo = (function () {
   var activeScreen = document.getElementById('active-screen')
     , inactiveScreens = document.getElementById('inactive-screens')
     , levelSuccessScreen = document.getElementById('level-success')
@@ -73,4 +73,4 @@ var DevToolsDynamo = (function () {
   }
 }())
 
-Gamifier.registerGameObject(DevToolsDynamo)
+Gamifier.registerGameObject(DevToolDynamo)
