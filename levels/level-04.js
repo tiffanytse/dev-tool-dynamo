@@ -1,16 +1,16 @@
 var Level4 = (function () {
   var levelId = 'level-4'
 
-    , back = null
-    , front = null
+    , left = null
+    , right = null
 
   function update () {
     var status = {status : 'continue'}
-      , backZ = parseInt(getComputedStyle(back).zIndex, 10)
-      , frontZ = parseInt(getComputedStyle(front).zIndex, 10)
+      , leftBg = getComputedStyle(left).backgroundColor
+      , rightBg = getComputedStyle(right).backgroundColor
 
     if (
-      backZ > frontZ
+      leftBg == rightBg
     ) {
       status.status = 'success'
       return status
@@ -20,13 +20,13 @@ var Level4 = (function () {
   }
 
   function startUp () {
-    back = document.getElementById('level-4-back')
-    front = document.getElementById('level-4-front')
+    left = document.getElementById('level-4-left')
+    right = document.getElementById('level-4-right')
   }
 
   function cleanUp () {
-    back = null
-    front = null
+    left = null
+    right = null
   }
 
   return {
