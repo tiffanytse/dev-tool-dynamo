@@ -6,8 +6,6 @@ var Level1 = (function () {
   function update () {
     var status = {status : 'continue'}
 
-    console.log(hiddenDiv.getAttribute('hidden'))
-
     if (
       hiddenDiv.getAttribute('hidden') === null
     ) {
