@@ -1,10 +1,10 @@
 var DevToolDynamo = (function () {
   var activeScreen = document.getElementById('active-screen')
     , inactiveScreens = document.getElementById('inactive-screens')
-    , levelSuccessScreen = document.getElementById('level-success')
-    , successMessages = levelSuccessScreen.getElementsByClassName('message')
-    , levelFailureScreen = document.getElementById('level-failure')
-    , failureMessages = levelFailureScreen.getElementsByClassName('message')
+    //, levelSuccessScreen = document.getElementById('level-success')
+    //, successMessages = levelSuccessScreen.getElementsByClassName('message')
+    //, levelFailureScreen = document.getElementById('level-failure')
+    //, failureMessages = levelFailureScreen.getElementsByClassName('message')
 
   function startScreen () {
     document.getElementsByClassName('game-start')[0].addEventListener('click', function gameStartClick (ev) {
