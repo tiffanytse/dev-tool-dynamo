@@ -63,7 +63,8 @@ var DevToolDynamo = (function () {
   }
 
   return {
-    startScreen : startScreen
+    loopInterval : 1000
+    , startScreen : startScreen
     , start : start
     , update : update
     , success : success

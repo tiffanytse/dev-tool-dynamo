@@ -20,6 +20,11 @@
     include 'screens/success.html';
     include 'screens/level-success.html';
     include 'screens/level-failure.html';
+    include 'levels/level-01.html';
+    include 'levels/level-02.html';
+    include 'levels/level-03.html';
+    include 'levels/level-04.html';
+    include 'levels/level-05.html';
     include 'levels/level-06.html';
   ?>
   </div>
@@ -30,6 +35,11 @@
   <script src="utils.js"></script>
   <script src="gamifier/gamifier.js"></script>
   <script src="dev-tool-dynamo.js"></script>
+  <script src="levels/level-01.js"></script>
+  <script src="levels/level-02.js"></script>
+  <script src="levels/level-03.js"></script>
+  <script src="levels/level-04.js"></script>
+  <script src="levels/level-05.js"></script>
   <script src="levels/level-06.js"></script>
   <?php endif; ?>
 </body>
