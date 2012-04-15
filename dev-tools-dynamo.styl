@@ -1,0 +1,232 @@
+@import 'nib'
+
+vendor-prefixes = moz ms o webkit official
+support-for-ie = false
+
+html
+  height 100%
+  margin 0
+  padding 0
+  width 100%
+
+  background-color #e2e2e2
+
+  color #333
+  font normal 100%/1.5 "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+body
+  height 100%
+  margin 0
+  overflow hidden
+  padding 0
+  position relative
+  width 100%
+
+h1
+  margin 0 0 1em
+
+  font-size 4em
+  font-weight 100
+  line-height 1em
+
+h2
+  left 0
+  margin 0
+  position absolute
+  top 0.1em
+  width 12em
+
+  font 200 18px/1.5 "Helvetica Neue",Helvetica,Arial,sans-serif
+  text-align right
+
+[hidden]
+  display none
+
+a
+a:link
+a:visited
+  border-bottom 0.1em solid #33f
+  outline none
+
+  color #33f
+  text-decoration none
+
+a:focus
+  outline 2px solid #33f
+
+mark
+  background-color #ffc
+
+.screen
+.level
+  margin 0 auto 0
+  padding 2em
+  width 35em
+
+  text-align center
+
+.level
+  padding-top 4em
+
+.screen-cover
+  height 100%
+  left 0
+  padding 2em 0
+  position absolute
+  top 0
+  width 100%
+
+  background-color rgba(#e2e2e2, 0.8)
+
+.intro
+  margin 1.5em
+
+  font-size 2em
+  font-weight 200
+
+.marker
+  display inline-block
+  height 2em
+  margin 0.2em 0 0
+  padding 0.45em 0 0
+  width 2em
+
+  background-color #333
+  border-radius 1em
+  box-sizing border-box
+
+  color #fff
+  font-size 8em
+  font-weight bold
+  line-height 1
+
+.marker-symbol
+  display inline-block
+  margin-top -0.2em
+
+  font-size 2em
+
+.marker[data-state="success"]
+  background-color #6dd110
+
+.marker[data-state="failure"]
+  background-color #f33
+
+.marker[data-state="stripes"]
+  background-color #1ecfdc
+
+form div
+fieldset
+.fieldset-group
+  margin 0 0 2em
+  padding 0
+
+  border 0
+
+.fieldset-group
+  padding-left 15em
+  position relative
+
+  text-align left
+
+label
+  display inline-block
+  margin 0 0.3em 0 0
+
+  font 200 18px/1.5 "Helvetica Neue",Helvetica,Arial,sans-serif
+  vertical-align middle
+
+input + label
+  margin-right 1em
+
+label[data-state="invisible"]
+  position absolute
+  top -999em
+
+select
+  outline none
+
+  font-size 16px
+  vertical-align middle
+
+input
+  width 2em
+
+  border 1px solid #ccc
+  outline none
+
+  font normal 16px/1.5 "Helvetica Neue",Helvetica,Arial,sans-serif
+  vertical-align middle
+
+input:focus
+select:focus
+  outline 2px solid #33f
+
+input[type="checkbox"]
+input[type="radio"]
+  width auto
+
+  vertical-align middle
+
+button
+  margin 3em 0
+  padding 0.4em 0.8em 0.6em
+  position relative
+
+  background-color #19adb8
+  border 2px solid #19abb8
+  border-radius 0.175em
+  cursor pointer
+  outline none
+
+  color #fff
+  font 400 18px/1 "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+button:hover
+button:focus
+  animation none
+  background-color #1ecfdc
+  border-color #33f
+
+button:active
+  top 1px
+
+  animation none
+  box-shadow inset 0 1px 4px rgba(0,0,0,0.2)
+
+form button
+  top -999em
+  position absolute
+
+form button[data-state="visible"]
+  position static
+
+form div + button
+  margin-top 1em
+
+.game-icon
+  display block
+  margin 3.5em auto 3.4em
+  width 400px
+
+.game-start
+  margin 0.7em 0
+
+  animation pulse 2s infinite
+
+  font-size 3em
+
+.game-start:hover
+.game-start:focus
+  animation none
+
+.game-start:active
+  animation none
+
+@keyframes pulse
+  0%
+    box-shadow none
+  50%
+    box-shadow 0 0 20px rgba(#19adb8,1)
+  100%
+    box-shadow none
