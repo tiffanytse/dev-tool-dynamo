@@ -18,7 +18,6 @@
   <?php
     include 'screens/start.html';
     include 'screens/success.html';
-    include 'screens/failure.html';
     include 'screens/level-success.html';
     include 'screens/level-failure.html';
   ?>
