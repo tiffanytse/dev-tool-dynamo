@@ -14,3 +14,4 @@
   - Git
   - Stylus
   - UglifyJS
+  - HTMLCompressor

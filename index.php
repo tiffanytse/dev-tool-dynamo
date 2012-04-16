@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="dev-tool-dynamo.css">
   <link rel="license" href="https://github.com/thomasjbradley/dev-tool-dynamo/blob/master/NEW-BSD-LICENSE.txt">
   <meta name="application-name" content="Dev Tool Dynamo">
-  <meta name="description" content="A small, fun, browser game to test your knowledge of using the browser developer tools.">
+  <meta name="description" content="A small, fun, browser game to test your knowledge of the browser developer tools.">
   <meta name="author" content="Thomas J Bradley">
   <link rel="author" href="http://thomasjbradley.ca">
 </head>
