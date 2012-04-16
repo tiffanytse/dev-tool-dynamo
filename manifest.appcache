@@ -1,0 +1,11 @@
+CACHE MANIFEST
+# rev 1
+
+dev-tool-dynamo.css
+dev-tool-dynamo.js
+
+# Images
+images/arrow.svg
+images/crosshair.png
+images/new-image.png
+images/toolbox.svg
