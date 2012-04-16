@@ -5,7 +5,7 @@ var Level3 = (function () {
 
   function update () {
     var status = {status : 'continue'}
-      , borderWidth = getComputedStyle(box).borderWidth
+      , borderWidth = getComputedStyle(box).borderTopWidth
 
     if (
       borderWidth

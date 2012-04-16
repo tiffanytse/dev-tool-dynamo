@@ -13,7 +13,7 @@ var Level8 = (function () {
       , circleT = circle.offsetTop
 
     if (
-      vertL - 126 == circleL
+      vertL - 124 == circleL
       && horzT - 123 == circleT
     ) {
       status.status = 'success'
