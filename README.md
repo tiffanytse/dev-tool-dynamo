@@ -1,6 +1,6 @@
 # Dev Tool Dynamo
 
-A small, fun, browser game to test your knowledge of using the browser developer tools.
+A small, fun, browser game to test your knowledge of the browser developer tools.
 
 <http://thomasjbradley.github.com/dev-tool-dynamo/>
 
