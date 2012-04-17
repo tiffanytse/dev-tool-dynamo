@@ -5,9 +5,10 @@ var Level1 = (function () {
 
   function update () {
     var status = {status : 'continue'}
+      , display = getComputedStyle(hiddenDiv).display
 
     if (
-      hiddenDiv.getAttribute('hidden') === null
+      display != 'none'
     ) {
       status.status = 'success'
       return status
