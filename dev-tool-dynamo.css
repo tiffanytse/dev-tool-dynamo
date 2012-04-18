@@ -38,6 +38,7 @@ form div + button{margin-top:1em}
 .shape{height:100px;left:50%;position:absolute;width:100px;z-index:0;background-color:#999}
 .circle{-moz-border-radius:50px;-webkit-border-radius:50px;border-radius:50px}
 #level-1-wrapper{margin:0 auto;height:3em;padding:2em;width:11em;border:3px solid #777}
+#level-1-hidden-div{display:none}
 #level-2-nums{font-size:1.5em;list-style-type:none}
 #level-3-box{margin:0 auto;height:11em;padding:2em;width:11em;background-color:#999}
 #level-4-left{background-color:#59ca1c;margin-left:-125px}
