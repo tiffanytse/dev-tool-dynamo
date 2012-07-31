@@ -4,4 +4,7 @@ CACHE MANIFEST
 dev-tool-dynamo.css
 dev-tool-dynamo.js
 
-# Images
+NETWORK:
+*
+
+CACHE:
