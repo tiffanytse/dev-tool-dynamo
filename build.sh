@@ -26,5 +26,10 @@ cp manifest.appcache build/manifest.appcache
 
 for img in images/*.*
 do
+  if [ $img == "images/new-image.png" ]
+  then
+    continue
+  fi
+
   echo $img >> build/manifest.appcache
 done

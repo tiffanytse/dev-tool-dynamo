@@ -42,7 +42,7 @@ var Level10 = (function () {
     levelForm.addEventListener('submit', onFormSubmit, false)
     levelForm.reset()
 
-    img.src = 'images/new-image.png'
+    img.src = 'images/new-image.png?' + Date.now()
     img.setAttribute('hidden', true)
     document.body.appendChild(img)
 
