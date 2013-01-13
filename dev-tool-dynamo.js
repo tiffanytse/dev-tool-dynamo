@@ -1,10 +1,11 @@
 var DevToolDynamo = (function () {
-  var activeScreen = document.getElementById('active-screen')
-    , inactiveScreens = document.getElementById('inactive-screens')
-    , levelSuccessScreen = document.getElementById('level-success')
-    , successMessages = levelSuccessScreen.getElementsByClassName('message')
-    , levelFailureScreen = document.getElementById('level-failure')
-    , failureMessages = levelFailureScreen.getElementsByClassName('message')
+  var levelSuccessScreen = 'level-success'
+    , levelFailureScreen = 'level-failure'
+
+  function setUp () {
+    shuffle(document.getElementById(levelSuccessScreen).getElementsByClassName('message'))
+    shuffle(document.getElementById(levelFailureScreen).getElementsByClassName('message'))
+  }
 
   function startScreen () {
     document.getElementsByClassName('game-start')[0].addEventListener('click', function gameStartClick (ev) {
@@ -13,10 +14,7 @@ var DevToolDynamo = (function () {
     }, false)
   }
 
-  function start () {
-    shuffle(successMessages)
-    shuffle(failureMessages)
-  }
+  function start () {}
 
   function update () {
     var status = {status : 'continue'}
@@ -25,24 +23,25 @@ var DevToolDynamo = (function () {
   }
 
   function success () {
-    activeScreen.appendChild(document.getElementById('success'))
+    Gamifier.showScreen('success')
   }
 
   function failure () {
-    activeScreen.appendChild(document.getElementById('failure'))
+    Gamifier.showScreen('failure')
   }
 
   function levelSuccess () {
     Gamifier.pause()
 
-    successMessages[0].removeAttribute('hidden')
-    activeScreen.appendChild(levelSuccessScreen)
+    Gamifier.showScreen(levelSuccessScreen)
+    var successMessage = document.getElementById(levelSuccessScreen).getElementsByClassName('message')[0]
+    successMessage.removeAttribute('hidden')
 
     screenTimeout = setTimeout(function () {
       clearTimeout(screenTimeout)
-      inactiveScreens.appendChild(levelSuccessScreen)
-      successMessages[0].setAttribute('hidden', true)
-      successMessages[0].parentNode.appendChild(successMessages[0])
+      Gamifier.hideScreen(levelSuccessScreen)
+      successMessage.setAttribute('hidden', true)
+      successMessage.parentNode.appendChild(successMessage)
       Gamifier.nextLevel()
     }, 700)
   }
@@ -50,20 +49,22 @@ var DevToolDynamo = (function () {
   function levelFailure () {
     Gamifier.pause()
 
-    failureMessages[0].removeAttribute('hidden')
-    activeScreen.appendChild(levelFailureScreen)
+    Gamifier.showScreen(levelFailureScreen)
+    var failureMessage = document.getElementById(levelFailureScreen).getElementsByClassName('message')[0]
+    failureMessage.removeAttribute('hidden')
 
     screenTimeout = setTimeout(function () {
       clearTimeout(screenTimeout)
-      inactiveScreens.appendChild(levelFailureScreen)
-      failureMessages[0].setAttribute('hidden', true)
-      failureMessages[0].parentNode.appendChild(failureMessages[0])
+      Gamifier.hideScreen(levelFailureScreen)
+      failureMessage.setAttribute('hidden', true)
+      failureMessage.parentNode.appendChild(failureMessage)
       Gamifier.resume()
     }, 700)
   }
 
   return {
     startScreen : startScreen
+    , setUp : setUp
     , start : start
     , update : update
     , success : success
