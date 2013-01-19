@@ -11,7 +11,7 @@ var Level10 = (function () {
 
     if (
       formSubmitted
-      && filesize >= 2.6
+      && filesize >= 2.5
       && filesize <= 3.2
     ) {
       status.status = 'success'
@@ -21,7 +21,7 @@ var Level10 = (function () {
     if (
       formSubmitted
       && (
-        filesize < 2.6
+        filesize < 2.5
         || filesize > 3.2
       )
     ) {
