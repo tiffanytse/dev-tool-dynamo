@@ -7,8 +7,10 @@ php index.php > build/index.html
 
 stylus -c -u nib -o build dev-tool-dynamo.styl
 
-svgo images/toolbox.svg
-svgo images/victory.svg
+for file in images/*.svg
+do
+  svgo $file
+done
 
 cat utils.js >> build/dev-tool-dynamo.js
 cat gamifier/gamifier.js >> build/dev-tool-dynamo.js
