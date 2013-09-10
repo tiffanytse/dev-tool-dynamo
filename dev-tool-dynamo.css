@@ -23,7 +23,7 @@ input + label{margin-right:1em}
 label[data-state="invisible"]{position:absolute;top:-999em}
 select{outline:none;font-size:16px;vertical-align:middle}
 input{width:12em;border:1px solid #ccc;outline:none;font:normal 16px/1.5 "Helvetica Neue",Helvetica,Arial,sans-serif;vertical-align:middle}
-input:focus,select:focus{outline:2px solid #33f}
+input:focus,select:focus{outline:2px solid #0e6e75}
 input[type="checkbox"],input[type="radio"]{width:auto;vertical-align:middle}
 button{margin:3em 0;padding:.4em .8em .5em;position:relative;background-color:#19adb8;border:2px solid #19abb8;-webkit-border-radius:.175em;border-radius:.175em;cursor:pointer;outline:none;color:#fff;font:400 18px/1 "Helvetica Neue",Helvetica,Arial,sans-serif}
 button:hover,button:focus{-moz-animation:none;-ms-animation:none;-o-animation:none;-webkit-animation:none;animation:none;background-color:#1697a0;border-color:#0e6e75}
